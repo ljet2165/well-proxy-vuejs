@@ -1,0 +1,183 @@
+:root {
+    // Colors
+    --primary-color: #173d7a;
+    --seconday-color: #396caa;
+    --secondary-color: #396caa;
+    --primary-text-color: #a9a9a9;
+    --secondary-text-color: #ffaa2e;
+}
+
+body {
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-auto, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-auto, .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md-auto, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-auto {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.btn {
+    border-width: 1.5px;
+    padding: 0.275rem 0.95rem;
+}
+
+.primary-text {
+    color: var(--primary-text-color);
+}
+.secondary-text {
+    color: var(--secondary-text-color);
+}
+
+.select2-container--default .select2-selection--single {
+    height: calc(2.25rem + 2px);
+}
+
+.select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    line-height: 36px;
+}
+
+.select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    height: 33px;
+    width: 50px;
+}
+
+.select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow
+    b {
+    border-color: var(--primary-color) transparent transparent transparent;
+    border-width: 10px 6px 0 6px;
+}
+
+.select2-container--default.select2-container--open
+    .select2-selection--single
+    .select2-selection__arrow
+    b {
+    border-color: transparent transparent var(--primary-color) transparent;
+    border-width: 0 6px 10px 6px;
+}
+.navbar-brand {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.nav.nav-pills {
+    margin-left: 2rem;
+}
+.nav.nav-pills li.nav-item {
+    padding-bottom: 0;
+}
+.nav-pills .nav-link {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color: var(--blue);
+    background-color: #fff;
+    box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.5);
+}
+.tabs-container .tab-content {
+    border-radius: 20px;
+    min-height: 22rem;
+    padding: 2rem 2rem;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-box {
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+// table
+.table-body-container .table.b-table.b-table-no-border-collapse {
+    border-spacing: 0 0.5rem;
+}
+.table-body-container .table tbody tr {
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+}
+.table-body-container .table tr td {
+    transition: all 0.3s;
+}
+.table-body-container .table tr:hover td:first-child {
+    border-left: 0.2rem solid var(--primary-color);
+}
+
+// datatable
+
+#datatable-app .theme--light.v-data-table {
+    background: transparent;
+}
+#datatable-app .theme--light.v-label,
+#datatable-app .theme--light.v-input,
+#datatable-app .theme--light.v-input input,
+#datatable-app .theme--light.v-input textarea,
+#datatable-app .theme--light.v-icon {
+    color: #fff;
+}
+#datatable-app .v-text-field > .v-input__control > .v-input__slot:after {
+    border-color: greenyellow;
+}
+#datatable-app .v-application .primary--text {
+    color: #fff !important;
+    caret-color: #fff !important;
+}
+#datatable-app .search-field {
+    background: transparent;
+    border: 0.1rem solid #fff;
+    color: #fff;
+}
+#datatable-app .search-field.form-control::placeholder {
+    color: #fff;
+}
+
+#datatable-app
+    .theme--light.v-text-field
+    > .v-input__control
+    > .v-input__slot:before {
+    border-color: #fff;
+}
+#datatable-app span.customer_name {
+    color: var(--secondary-color);
+    font-size: 1rem;
+}
+#datatable-app .v-application .data-table {
+    box-shadow: none;
+}
+#datatable-app .theme--light.v-data-table.v-data-table--fixed-header thead th {
+    font-size: 1rem;
+    color: #fff;
+    background: transparent;
+}
+#datatable-app .v-pagination__navigation .v-icon {
+    color: var(--blue);
+}
+#datatable-app .theme--light.v-data-table.v-data-table--fixed-header thead th {
+    box-shadow: none;
+}
+#datatable-app .theme--light.v-data-table table {
+    border-collapse: separate;
+    border-spacing: 0 0.5rem;
+}
+#datatable-app .theme--light.v-data-table tbody tr {
+    box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.2);
+}
+#datatable-app .theme--light.v-data-table tbody tr td:first-child {
+    border-left: 0.2rem solid #03661a;
+    transition: all 0.3s;
+}
+#datatable-app
+    .theme--light.v-data-table
+    tbody
+    tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper)
+    td:first-child {
+    border-left: 0.3rem solid var(--secondary-color);
+}
