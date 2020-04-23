@@ -14,3 +14,33 @@
 
 // custom
 @import 'custom';
+
+
+.slider {
+    width: 100%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 40px;
+}
+
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .8;
+}
+
+.slick-current {
+  opacity: 5;
+}

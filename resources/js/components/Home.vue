@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div> 
     <section class="container-fluid header-section pl-0 pr-0">
       <!-- navigation start -->
       <div class="container home">
@@ -558,6 +558,7 @@ input[type="checkbox"] {
     margin-top: 1rem;
   }
 }
+   
 </style>
 
 <script>
@@ -566,7 +567,7 @@ import BannerHome from "./BannerHome";
 import AboutUsSection from "./AboutUsSection";
 import CustomerQuotes from "./CustomerQuotes";
 import FooterComponent from "./FooterComponent";
-
+import Slick from "vue-slick";
 export default {
   components: {
     Navigation,
@@ -620,9 +621,10 @@ export default {
     };
   },
   methods: {
+   
     onSlideStart(slide) {
       this.sliding = true;
-    },
+   },
     onSlideEnd(slide) {
       this.sliding = false;
     }

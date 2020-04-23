@@ -17,6 +17,27 @@
           <!-- profile data container -->
           <CustomerManagementComponent></CustomerManagementComponent>
           <!-- profile data container end -->
+
+          <!-- Status Model -->
+           <div class="modal fade" id="statusmodel" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" style="color:var(--blue);text-align:center">PLease Confirm</h4>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Are You Sure you want  to {{user}} acount?</h4>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+       </div>
+      
+    </div>
+  </div>
         </div>
       </div>
     </main>

@@ -5,6 +5,8 @@ import Vuetify from "vuetify";
 import VueRouter from "vue-router";
 import routes from "./routes";
 
+
+
 // Vue.use(CarouselPlugin)
 import BootstrapVue from "bootstrap-vue"; //Importing
 import ToggleButton from 'vue-js-toggle-button'

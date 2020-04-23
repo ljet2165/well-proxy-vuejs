@@ -12,49 +12,102 @@
       </div>
     </div>
 
-    <div class="row quotes-row">
-      <div class="col-lg-3" style="margin-left: -4rem">
-        <div class="quotes-slider left">
-          <div class="customer-thumbnail">
-            <img src="https://www.w3schools.com/howto/img_avatar.png" alt class="img-fluid" />
+      <section class="center slider">
+        
+          <div  >
+            <div class="quotes-slider">
+                    <div class="customer-thumbnail">
+                      <img src="https://www.w3schools.com/howto/img_avatar.png" alt class="img-fluid" />
+                    </div>
+                    <div
+                      class="customer-quote"
+                    >Wall Proxy is an amazing Proxies has helped us get immediately organized with our needs. What I love about it is the ease of use.</div>
+                    <div class="break-column"></div>
+                    <div class="customer-name">Rebecca Mayer, Miann & Co</div>
+                  </div>
           </div>
-          <div
-            class="customer-quote"
-          >Wall Proxy is an amazing Proxies has helped us get immediately organized with our needs. What I love about it is the ease of use.</div>
-          <div class="break-column"></div>
-          <div class="customer-name">Rebecca Mayer, Miann & Co</div>
-        </div>
-      </div>
-      <div class="col-lg-6" style="margin-left: 4rem">
-        <div class="quotes-slider">
-          <div class="customer-thumbnail">
-            <img src="https://www.w3schools.com/howto/img_avatar.png" alt class="img-fluid" />
+                    <div  >
+            <div class="quotes-slider">
+                    <div class="customer-thumbnail">
+                      <img src="https://www.w3schools.com/howto/img_avatar.png" alt class="img-fluid" />
+                    </div>
+                    <div
+                      class="customer-quote"
+                    >Wall Proxy is an amazing Proxies has helped us get immediately organized with our needs. What I love about it is the ease of use.</div>
+                    <div class="break-column"></div>
+                    <div class="customer-name">Rebecca Mayer, Miann & Co</div>
+                  </div>
           </div>
-          <div
-            class="customer-quote"
-          >Wall Proxy is an amazing Proxies has helped us get immediately organized with our needs. What I love about it is the ease of use.</div>
-          <div class="break-column"></div>
-          <div class="customer-name">Rebecca Mayer, Miann & Co</div>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="quotes-slider right">
-          <div class="customer-thumbnail">
-            <img src="https://www.w3schools.com/howto/img_avatar.png" alt class="img-fluid" />
+                    <div  >
+            <div class="quotes-slider">
+                    <div class="customer-thumbnail">
+                      <img src="https://www.w3schools.com/howto/img_avatar.png" alt class="img-fluid" />
+                    </div>
+                    <div
+                      class="customer-quote"
+                    >Wall Proxy is an amazing Proxies has helped us get immediately organized with our needs. What I love about it is the ease of use.</div>
+                    <div class="break-column"></div>
+                    <div class="customer-name">Rebecca Mayer, Miann & Co</div>
+                  </div>
           </div>
-          <div
-            class="customer-quote"
-          >Wall Proxy is an amazing Proxies has helped us get immediately organized with our needs. What I love about it is the ease of use.</div>
-          <div class="break-column"></div>
-          <div class="customer-name">Rebecca Mayer, Miann & Co</div>
-        </div>
-      </div>
-    </div>
+                    <div  >
+            <div class="quotes-slider">
+                    <div class="customer-thumbnail">
+                      <img src="https://www.w3schools.com/howto/img_avatar.png" alt class="img-fluid" />
+                    </div>
+                    <div
+                      class="customer-quote"
+                    >Wall Proxy is an amazing Proxies has helped us get immediately organized with our needs. What I love about it is the ease of use.</div>
+                    <div class="break-column"></div>
+                    <div class="customer-name">Rebecca Mayer, Miann & Co</div>
+                  </div>
+          </div>
+                    <div  >
+            <div class="quotes-slider">
+                    <div class="customer-thumbnail">
+                      <img src="https://www.w3schools.com/howto/img_avatar.png" alt class="img-fluid" />
+                    </div>
+                    <div
+                      class="customer-quote"
+                    >Wall Proxy is an amazing Proxies has helped us get immediately organized with our needs. What I love about it is the ease of use.</div>
+                    <div class="break-column"></div>
+                    <div class="customer-name">Rebecca Mayer, Miann & Co</div>
+                  </div>
+          </div>
+                    <div  >
+            <div class="quotes-slider">
+                    <div class="customer-thumbnail">
+                      <img src="https://www.w3schools.com/howto/img_avatar.png" alt class="img-fluid" />
+                    </div>
+                    <div
+                      class="customer-quote"
+                    >Wall Proxy is an amazing Proxies has helped us get immediately organized with our needs. What I love about it is the ease of use.</div>
+                    <div class="break-column"></div>
+                    <div class="customer-name">Rebecca Mayer, Miann & Co</div>
+                  </div>
+          </div>
+                    <div  >
+            <div class="quotes-slider">
+                    <div class="customer-thumbnail">
+                      <img src="https://www.w3schools.com/howto/img_avatar.png" alt class="img-fluid" />
+                    </div>
+                    <div
+                      class="customer-quote"
+                    >Wall Proxy is an amazing Proxies has helped us get immediately organized with our needs. What I love about it is the ease of use.</div>
+                    <div class="break-column"></div>
+                    <div class="customer-name">Rebecca Mayer, Miann & Co</div>
+                  </div>
+          </div>
+ 
+  </section>
+
   </section>
   <!-- Customer quotes section end -->
 </template>
 
 <style scoped>
+
+
 .primary-heading {
   color: var(--blue);
   font-weight: 800;
@@ -137,5 +190,23 @@
 </style>
 
 <script>
-export default {};
+export default {
+  mounted(){
+
+    $(".center").slick({
+        dots: true,
+        arrows: true,
+        cssEase: 'linear',
+        infinite: true,
+        centerMode: true,
+        slidesToShow:2,
+        slidesToScroll: 1,
+          autoplay: true,
+  autoplaySpeed: 6000,
+      //   prevArrow: '<i class="fas fa-chevron-left"></i>',
+      // nextArrow: '<i class="fas fa-chevron-right"></i>',
+      });
+
+  }
+};
 </script>

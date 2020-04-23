@@ -14066,3 +14066,30 @@ body {
   border-left: 0.3rem solid var(--secondary-color);
 }
 
+.slider {
+  width: 100%;
+  margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 40px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}
+
+.slick-active {
+  opacity: 0.8;
+}
+
+.slick-current {
+  opacity: 5;
+}
+

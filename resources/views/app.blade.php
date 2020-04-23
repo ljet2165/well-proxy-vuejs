@@ -10,6 +10,9 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <link href="{{asset('css/select2.min.css')}}" rel="stylesheet" type="text/css">
         <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{asset('css/slick.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{asset('css/slick-theme.css')}}" rel="stylesheet" type="text/css">
+
     </head>
     <body>
         <div id="app">
@@ -23,7 +26,8 @@
           </script>
         <script src="{{asset('js/app.js')}}"></script>
         <script src="{{asset('js/select2.min.js')}}"></script>
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
         <script>
             $('.select2').select2();
         </script>
