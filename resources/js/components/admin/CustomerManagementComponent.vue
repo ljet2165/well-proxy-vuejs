@@ -79,29 +79,38 @@
         </v-app>
       </div>
     </div>
-     <!-- Status Model -->
-           <div class="modal fade" id="statusmodel" role="dialog">
-              <div class="modal-dialog modal-width model-sm">
-              
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header bottom-down">
-               <h5 class="modal-title" style="color:var(--blue);margin-left: 100px">PLease Confirm</h5> 
-                  </div>
-                  <div class="modal-body" >
-                  <center>  <p style="margin-left:20px;margin-right:20px;font-size:18px">Are You Sure you want  to {{status}} <b>{{user}}</b> acount?</p></center>
-                  </div>
-                  <div class="modal-footer  bottom-up">
-                    <button type="button" class="btn btn-default pull-left cls-btn-css" @click="statusaction(false)">NO</button>
-                    <button type="button" class="btn btn-default pull-right btn-css" @click="statusaction(true)">Yes</button>
-
-                  </div>
-       </div>
-      
+    <!-- Status Model -->
+    <div class="modal fade" id="statusmodel" role="dialog">
+      <div class="modal-dialog modal-width model-sm">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header bottom-down">
+            <h5 class="modal-title" style="color:var(--blue);margin-left: 100px">PLease Confirm</h5>
+          </div>
+          <div class="modal-body">
+            <center>
+              <p style="margin-left:20px;margin-right:20px;font-size:18px">
+                Are You Sure you want to {{status}}
+                <b>{{user}}</b> acount?
+              </p>
+            </center>
+          </div>
+          <div class="modal-footer bottom-up">
+            <button
+              type="button"
+              class="btn btn-default pull-left cls-btn-css"
+              @click="statusaction(false)"
+            >NO</button>
+            <button
+              type="button"
+              class="btn btn-default pull-right btn-css"
+              @click="statusaction(true)"
+            >Yes</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  </div>
-  
 </template>
 
 
@@ -116,99 +125,25 @@ export default {
       });
       return proxystr;
     },
-onToggleChange:function(event,id){
-$('#statusmodel').modal('show')
-this.switchid=id
-if(event.value)
-{
-  this.status='Activate';
-}else{
-  this.status='Suspend';
-}
-},
+    
+    onToggleChange: function(event, id) {
+      $("#statusmodel").modal("show");
+      this.switchid = id;
+      if (event.value) {
+        this.status = "Activate";
+      } else {
+        this.status = "Suspend";
+      }
+    },
     statusaction: function(status) {
-     $('#statusmodel').modal('hide')      
-  
+      $("#statusmodel").modal("hide");
     }
   },
   data() {
     return {
-      status:'Activate',
-      user:'Arslan Ali',
-      switchid:'',
-      columns: [
-        {
-          label: "Customers",
-          representedAs: ({ customer }) =>
-            `${customer.name}<br />${customer.email}, ${customer.mobile}`,
-          interpolate: true
-        },
-        {
-          label: "Company Details",
-          representedAs: ({ company }) =>
-            `${company.name}</br>${company.address}<br />${company.house}</br> ${company.city} </br> ${company.phone}`,
-          interpolate: true
-        },
-        { label: "Plan Name", field: "plan", headerClass: "class" },
-        { label: "Setup Date", field: "setup_date", headerClass: "class" },
-        { label: "Status",
-          representedAs: ({ Status }) =>
-            `${Status.status}</br>${Status.id}`,
-          interpolate: true },
-        { label: "Proxy", field: "proxy" },
-        { label: "Data Traffic", field: "data_traffic" },
-        { label: "Actions", field: "action" }
-      ],
-      rows: [
-        {
-          id: 1,
-          customer: {
-            name: "Ali Arsalan",
-            email: "aliarsalan@gmail.com",
-            mobile: "+923123456789"
-          },
-          company: {
-            name: "Softech Visions",
-            address: "VAT No: 1234",
-            house: "House No. 23 street 1,",
-            city: "Bahria Orchard, Lahore",
-            phone: "+923216547898"
-          },
-          plan: "Premium",
-          setup_date: "14-04-2020",
-          proxy:
-            "Data Center </br> Static Residential </br> Residential </br> Mobile",
-          data_traffic: "5.3 MB",
-          action: "<i class='fa fa-edit'></i>"
-        }
-      ],
-      page: 1,
-      per_page: 10,
-      sortable: false,
-      caption: false,
-      pagination: true,
-      items: [
-        {
-          customer: {
-            name: "Ali Arsalan",
-            email: "aliarsalan@gmail.com",
-            mobile: "+923123456789"
-          },
-          company: {
-            name: "Softech Visions",
-            address: "VAT No: 1234",
-            house: "House No. 23 street 1,",
-            city: "Bahria Orchard, Lahore",
-            phone: "+923216547898"
-          },
-          plan: "Premium",
-          setup_date: "14-04-2020",
-          proxy:
-            "Data Center </br> Static Residential </br> Residential </br> Mobile",
-          data_traffic: "5.3 MB",
-          action: "<i class='fa fa-edit'></i>"
-        }
-      ],
+      status: "Activate",
+      user: "Arslan Ali",
+      switchid: "",
 
       search: "",
       width: 90,
@@ -249,7 +184,7 @@ if(event.value)
             phone: "+923216547898"
           },
           plan: "Premium",
-          status:{status:true,id:'5'},
+          status: { status: true, id: "5" },
           setup_date: "14-04-2020",
           proxy: ["Data Center", "Static Residential", "Residential", "Mobile"],
           data_traffic: "5.3 MB",
@@ -272,7 +207,7 @@ if(event.value)
             phone: "+923216547898"
           },
           plan: "Premium",
-          status:{status:true,id:'4'},
+          status: { status: true, id: "4" },
           setup_date: "14-04-2020",
           proxy: ["Data Center", "Static Residential", "Residential", "Mobile"],
           data_traffic: "5.3 MB",
@@ -295,7 +230,7 @@ if(event.value)
             phone: "+923216547898"
           },
           plan: "Premium",
-          status:{status:true,id:'3'},
+          status: { status: true, id: "3" },
           setup_date: "14-04-2020",
           proxy: ["Data Center", "Static Residential", "Residential", "Mobile"],
           data_traffic: "5.3 MB",
@@ -318,7 +253,7 @@ if(event.value)
             phone: "+923216547898"
           },
           plan: "Gold",
-          status:{status:true,id:'2'},
+          status: { status: true, id: "2" },
           setup_date: "14-04-2020",
           proxy: ["Data Center", "Static Residential", "Residential", "Mobile"],
           data_traffic: "5.3 MB",
@@ -341,7 +276,7 @@ if(event.value)
             phone: "+923216547898"
           },
           plan: "Premium",
-          status:{status:false,id:'1'},
+          status: { status: false, id: "1" },
           setup_date: "14-04-2020",
           proxy: ["Data Center", "Static Residential", "Residential", "Mobile"],
           data_traffic: "5.3 MB",
@@ -353,39 +288,39 @@ if(event.value)
       ]
     };
   },
-  mounted(){
-    console.log(this.items)
+  mounted() {
+    console.log(this.items);
   }
 };
 </script>
 
 
 <style scoped>
-.modal-width{
-  width:400px;
+.modal-width {
+  width: 400px;
 }
-.btn-css{
-    background-color: #3b6dbd;
-    color: white;
-    width: 80px;
-    border-radius: 10px;
+.btn-css {
+  background-color: #3b6dbd;
+  color: white;
+  width: 80px;
+  border-radius: 10px;
 }
-.cls-btn-css{
- margin-right:200px;
-    width: 80px;
-    border-radius: 10px;
-     background-color:#dee2e6
+.cls-btn-css {
+  margin-right: 200px;
+  width: 80px;
+  border-radius: 10px;
+  background-color: #dee2e6;
 }
-.modal-content  {
-    -webkit-border-radius: 15px !important;
-    -moz-border-radius: 15px !important;
-    border-radius: 15px !important; 
+.modal-content {
+  -webkit-border-radius: 15px !important;
+  -moz-border-radius: 15px !important;
+  border-radius: 15px !important;
 }
-.bottom-up{
-  border-top:1px solid #1f5bbb;
+.bottom-up {
+  border-top: 1px solid #1f5bbb;
 }
-.bottom-down{
-  border-bottom:1px solid #1f5bbb;
+.bottom-down {
+  border-bottom: 1px solid #1f5bbb;
 }
 #datatable-app {
   margin-top: -10rem;
