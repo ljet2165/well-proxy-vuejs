@@ -12,7 +12,7 @@
   >>>.home .navbar.navbar-light .navbar-nav .nav-link {
     color: #fff !important;
   }
-  >>>.home .header .router-link-active.router-link-exact-active:not(.btn) {
+  >>>.home .header .nav-link.router-link-active.router-link-exact-active:not(.btn) {
     border-bottom: 0.1rem solid #fff;
   }
   >>>.home .btn-outline-primary {

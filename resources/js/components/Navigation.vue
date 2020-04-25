@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white">
-      <a class="navbar-brand" href="#">Logo</a>
+      <router-link :to="{name: 'home'}" class="navbar-brand">Logo</router-link>
       <button
         class="navbar-toggler"
         type="button"

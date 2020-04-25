@@ -16,7 +16,7 @@ li.nav-item {
     padding: 0;
 }
 
-.header .router-link-active.router-link-exact-active:not(.btn) {
+.header .nav-link.router-link-active.router-link-exact-active:not(.btn) {
     padding-bottom: 0;
     border-bottom: 0.1rem solid var(--blue);
 }
