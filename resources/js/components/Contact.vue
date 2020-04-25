@@ -91,45 +91,6 @@
   </div>
 </template>
 
-<style scoped>
-.contact-info {
-  margin-bottom: 1rem;
-}
-.contact-info .icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 53px;
-  border-radius: 0.3rem;
-  font-size: 1.4rem;
-}
-.contact-info .desc .property {
-  font-size: 1.1rem;
-  font-weight: 700;
-}
-.contact-info .desc .value {
-  font-weight: 400;
-  color: #a9a9a9 !important;
-}
-.contact-container {
-  padding: 0.2rem 3rem;
-  border-radius: 1.25rem;
-  /* position: absolute; */
-  width: 100%;
-  box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.1);
-  z-index: 9999;
-  margin-top: -18rem;
-}
-.btn-contact {
-  border-bottom: 0.3rem solid var(--blue);
-  padding: 0.75rem 0.95rem;
-}
-.form-control:focus {
-  border-color: transparent;
-  box-shadow: 0 0 0 0.1rem var(--blue);
-}
-</style>
-
 <script>
 import Navigation from "./Navigation";
 import Banner from "./Banner";
@@ -143,3 +104,5 @@ export default {
   }
 };
 </script>
+
+<style src="./assets/Contact.css" scoped></style>

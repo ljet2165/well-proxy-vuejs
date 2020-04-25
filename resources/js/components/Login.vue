@@ -73,93 +73,24 @@
                   </div>
                   <div class="row mt-4">
                     <div class="col-lg-12 text-center text-muted-color">
-                      <p>Not a member? <a href="#">Create Account</a></p>
+                      <p>
+                        Not a member?
+                        <a href="#">Create Account</a>
+                      </p>
                     </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
     <div class="container-fluid pr-0 pl-0">
       <FooterComponent></FooterComponent>
     </div>
   </div>
 </template>
-
-<style scoped>
-.contact-container {
-  padding: 2.2rem 3rem;
-  border-radius: 1.25rem;
-  position: relative;
-  width: 100%;
-  box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.1);
-  z-index: 9999;
-  margin-top: -14rem;
-  background-color: #fff;
-  border-bottom: 0.3rem solid var(--cyan);
-}
-.card-heading {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-.card-description {
-  font-size: 0.8rem;
-  margin-left: -3rem;
-  margin-right: -3rem;
-  color: #a9a9a9;
-}
-.guarantee-image {
-  margin-top: -5rem;
-}
-.forget-text a {
-  border-left: 1px solid #a9a9a9;
-}
-.text-muted-color {
-  color: #a9a9a9;
-  font-size: 1rem;
-}
-.text-muted {
-  font-size: 12px;
-}
-.input-group {
-  flex-direction: row-reverse;
-}
-.input-group input {
-  border-left: none;
-  padding: 1.5rem 0.75rem;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.input-group-text {
-  background: transparent;
-  color: var(--blue);
-  font-size: 1.3rem;
-}
-.input-group-text i {
-  border-right: 1px solid var(--blue);
-  padding-right: 1rem;
-}
-input[type="checkbox"] {
-  width: 0.8rem;
-}
-.btn-contact {
-  border-bottom: 0.3rem solid var(--blue);
-  padding: 0.75rem 0.95rem;
-}
-.form-control:focus {
-  border-color: transparent;
-  box-shadow: none;
-  border: 2px solid var(--blue);
-  border-left: none;
-}
-.form-control:focus + .input-group-prepend .input-group-text {
-  border: 2px solid var(--blue);
-  border-right: none;
-}
-</style>
 
 <script>
 import Navigation from "./Navigation";
@@ -179,3 +110,5 @@ export default {
   }
 };
 </script>
+
+<style src="./assets/Login.css" scoped></style>

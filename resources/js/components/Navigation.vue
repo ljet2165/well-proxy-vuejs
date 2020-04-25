@@ -35,31 +35,6 @@
   </div>
 </template>
 
-<style scoped>
-.navbar-brand {
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  color: var(--blue) !important;
-  font-size: 42px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-li.nav-item {
-  padding: 0.52rem 0.5rem;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: var(--blue);
-  font-weight: 500;
-  padding: 0;
-}
-
-.header .router-link-active.router-link-exact-active:not(.btn) {
-  padding-bottom: 0;
-  border-bottom: 0.1rem solid var(--blue);
-}
-</style>
-
 <script>
 export default {
   mounted() {
@@ -67,3 +42,5 @@ export default {
   }
 };
 </script>
+
+<style src="./assets/Navigation.css" scoped></style>

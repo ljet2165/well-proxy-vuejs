@@ -47,63 +47,6 @@
   </footer>
 </template>
 
-
-<style scoped>
-#footer {
-  min-height: 300px;
-  background: var(--blue);
-  background: url('/images/resources/home-page/footer-background.png');
-  background-repeat: no-repeat;
-  /* background-size: 100% auto; */
-  background-size: cover;
-  background-position: top center;
-  margin-top: 5rem;
-}
-#footer .container{
-  padding-top: 25rem;
-}
-.navbar{
-  padding: 0.5rem 0rem;
-}
-.navbar-nav li.nav-item:not(:last-child) {
-  border-right: 0.1rem solid #fff;
-}
-.navbar-nav li.nav-item .nav-link {
-  color: white;
-}
-.nav-link {
-  padding: 0.3rem 1rem;
-  font-weight: 600;
-}
-.footer-social-icons * {
-  color: #fff !important;
-}
-.footer-social-icons i.fab {
-  font-size: 1.4rem;
-  padding-right: 1rem;
-}
-.navbar-brand {
-  color: #fff !important;
-}
-.footer-end {
-  border-top: 0.1rem solid #fff;
-}
-
-p.copyright-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100%;
-  color: #fff;
-}
-
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0.7rem;
-    padding-left: 0.7rem;
-  }
-}
-</style>
 <script>
 export default {
   data() {
@@ -116,3 +59,5 @@ export default {
   }
 };
 </script>
+
+<style src="./assets/FooterComponent.css" scoped></style>
