@@ -125,7 +125,7 @@ export default {
       });
       return proxystr;
     },
-    
+
     onToggleChange: function(event, id) {
       $("#statusmodel").modal("show");
       this.switchid = id;
@@ -287,144 +287,8 @@ export default {
         }
       ]
     };
-  },
-  mounted() {
-    console.log(this.items);
   }
 };
 </script>
 
-
-<style scoped>
-.modal-width {
-  width: 400px;
-}
-.btn-css {
-  background-color: #3b6dbd;
-  color: white;
-  width: 80px;
-  border-radius: 10px;
-}
-.cls-btn-css {
-  margin-right: 200px;
-  width: 80px;
-  border-radius: 10px;
-  background-color: #dee2e6;
-}
-.modal-content {
-  -webkit-border-radius: 15px !important;
-  -moz-border-radius: 15px !important;
-  border-radius: 15px !important;
-}
-.bottom-up {
-  border-top: 1px solid #1f5bbb;
-}
-.bottom-down {
-  border-bottom: 1px solid #1f5bbb;
-}
-#datatable-app {
-  margin-top: -10rem;
-  background: transparent;
-  padding: 0 0.2rem;
-}
-.v-application .data-table {
-  box-shadow: none;
-}
-.profile-header-section {
-  background: url(/images/resources/home-page/banner-image.png);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center top;
-  min-height: 20rem;
-}
-.profile-header-section .navbar.navbar-light {
-  background: transparent !important;
-}
-.profile-header-section .navbar.navbar-light .navbar-brand,
-.profile-header-section .navbar.navbar-light .navbar-nav .nav-link {
-  color: #fff !important;
-}
-.profile-header-section .router-link-active.router-link-exact-active:not(.btn) {
-  border-bottom: 0.1rem solid #fff;
-}
-.profile-header-section .btn-outline-primary {
-  color: #fff;
-  border-color: #fff;
-}
-.profile-header-section .btn-primary {
-  color: var(--blue);
-  background-color: #fff;
-  border-color: #fff;
-}
-
-.table-head {
-  padding: 0 1rem;
-}
-.table-body {
-  background-color: #fff;
-  box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  padding: 1rem 0;
-}
-
-.secondary-heading {
-  flex: 1;
-  color: var(--blue);
-  font-weight: 500;
-  font-size: 1.4rem;
-}
-.text-muted-color {
-  color: #a9a9a9;
-  font-size: 1rem;
-}
-.text-muted {
-  font-size: 12px;
-}
-
-.form-control:focus {
-  border-color: transparent;
-  box-shadow: none;
-  border: 2px solid var(--blue);
-  border-left: none;
-}
-.form-control:focus + .input-group-prepend .input-group-text {
-  border: 2px solid var(--blue);
-  border-right: none;
-}
-
-.content-card {
-  margin-top: -6rem;
-}
-.nav.nav-pills li.nav-item {
-  padding-bottom: 0;
-}
-.nav-pills .nav-link {
-  color: white;
-  font-weight: 500;
-  font-size: 1rem;
-}
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  color: var(--blue);
-  background-color: #fff;
-}
-.tab-content {
-  background: #fff;
-}
-@media (min-width: 768px) {
-  .custom-offset-md-1 {
-    margin-left: 13.333333%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .card-3 {
-    margin-top: 1rem;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .card {
-    margin-top: 1rem;
-  }
-}
-</style>
+<style src="../assets/admin/CustomerManagementComponent.css" scoped></style>

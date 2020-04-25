@@ -1,0 +1,41 @@
+.modal-width {
+    width: 400px;
+  }
+  .btn-css {
+    background-color: #3b6dbd;
+    color: white;
+    width: 80px;
+    border-radius: 10px;
+  }
+  .cls-btn-css {
+    margin-right: 200px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: #dee2e6;
+  }
+  .modal-content {
+    -webkit-border-radius: 15px !important;
+    -moz-border-radius: 15px !important;
+    border-radius: 15px !important;
+  }
+  .bottom-up {
+    border-top: 1px solid #1f5bbb;
+  }
+  .bottom-down {
+    border-bottom: 1px solid #1f5bbb;
+  }
+  #datatable-app {
+    margin-top: -9.8rem;
+    background: transparent;
+    padding: 0 0.2rem;
+  }
+  .v-application .data-table {
+    box-shadow: none;
+  }
+  
+  .table-body {
+    background-color: #fff;
+    box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 1rem 0;
+  }

@@ -1,0 +1,132 @@
+.content-card {
+    margin-top: -6rem;
+}
+.card-box {
+    padding: 1rem 0.8rem;
+}
+.card-icon {
+    font-size: 1.8rem;
+    vertical-align: top;
+    color: var(--secondary-color);
+    margin-right: 0.3rem;
+}
+.card-heading-row {
+    border-bottom: 1px solid var(--secondary-text-color);
+    padding: 0.2rem 1rem;
+}
+h2.card-box-heading {
+    font-size: 1.3rem;
+    color: var(--secondary);
+    margin-bottom: 0.1rem;
+}
+p.card-box-description {
+    font-size: 1.2rem;
+    margin-bottom: -5px;
+}
+.card-box-desc .text-muted {
+    font-size: 12px;
+    color: #8c8c8c !important;
+}
+.network-type-card .card-box-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+}
+.network-type-card .card-box-description {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+.network-type-card .text-muted {
+    font-size: 9px;
+}
+
+.filter-row {
+    margin-top: -2rem;
+}
+.filter-row .card-box {
+    border-radius: 10px;
+    min-height: 8rem;
+}
+.filter-row [class^="col-lg"],
+.card-box [class^="col-lg"] {
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+select.custom-select {
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+}
+
+.text-muted {
+    font-size: 12px;
+}
+.content-card {
+    margin-top: -6rem;
+}
+.card-box {
+    padding: 1rem 0.8rem;
+}
+.card-icon {
+    font-size: 1.8rem;
+    vertical-align: top;
+    color: var(--secondary-color);
+    margin-right: 0.3rem;
+}
+.card-heading-row {
+    border-bottom: 1px solid var(--secondary-text-color);
+    padding: 0.2rem 1rem;
+}
+h2.card-box-heading {
+    font-size: 1.3rem;
+    color: var(--secondary);
+    margin-bottom: 0.1rem;
+}
+p.card-box-description {
+    font-size: 1.2rem;
+    margin-bottom: -5px;
+}
+.card-box-desc .text-muted {
+    font-size: 12px;
+    color: #8c8c8c !important;
+}
+.network-type-card .card-box-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+}
+.network-type-card .card-box-description {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+.network-type-card .text-muted {
+    font-size: 9px;
+}
+
+.filter-row {
+    margin-top: -2rem;
+}
+.filter-row .card-box {
+    border-radius: 10px;
+    min-height: 8rem;
+}
+.filter-row [class^="col-lg"],
+.card-box [class^="col-lg"] {
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+select.custom-select {
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+}
+
+.text-muted {
+    font-size: 12px;
+}

@@ -1,0 +1,21 @@
+.content-card {
+    margin-top: -6rem;
+}
+.card-box {
+    padding: 1rem 0.8rem;
+}
+.chart-heading {
+    color: var(--secondary-color);
+}
+.filter-row {
+    margin-top: -2rem;
+}
+.filter-row .card-box {
+    border-radius: 10px;
+}
+
+select.custom-select {
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+}
