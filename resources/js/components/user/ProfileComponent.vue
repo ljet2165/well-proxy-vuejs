@@ -125,9 +125,4 @@ export default {
 };
 </script>
 
-
-<style scoped>
-
-</style>
-
 <style src="../assets/user/ProfileComponent.css" scoped></style>
