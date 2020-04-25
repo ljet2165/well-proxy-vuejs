@@ -1,0 +1,38 @@
+.profile-header-section {
+    background: url(/images/resources/admin/banner-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    /* min-height: 20rem; */
+}
+.profile-header-section .navbar.navbar-light {
+    background: transparent !important;
+}
+.profile-header-section .navbar.navbar-light .navbar-brand,
+.profile-header-section .navbar.navbar-light .navbar-nav .nav-link {
+    color: #fff !important;
+}
+.profile-header-section .router-link-active.router-link-exact-active:not(.btn) {
+    border-bottom: 0.1rem solid #fff;
+}
+.profile-header-section .btn-outline-primary {
+    color: #fff;
+    border-color: #fff;
+}
+.profile-header-section .btn-primary {
+    color: var(--blue);
+    background-color: #fff;
+    border-color: #fff;
+}
+.profile-header-section .contact-container {
+    padding: 1rem 1.5rem;
+    padding-top: 0.8rem;
+    border-radius: 1.25rem;
+    position: relative;
+    width: 100%;
+    /* box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.1); */
+    z-index: 9999;
+    margin-top: -2rem;
+    /* background-color: #fafafa; */
+    /* border-bottom: 0.3rem solid var(--cyan); */
+}

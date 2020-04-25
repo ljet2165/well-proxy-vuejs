@@ -14,6 +14,7 @@
                     unchecked-value="not_accepted"
                   >Data Center</b-form-checkbox>
                 </div>
+
                 <div class="col-lg-7 pr-0">
                   <b-form-checkbox
                     id="checkbox-2"
@@ -22,6 +23,7 @@
                     unchecked-value="not_accepted"
                   >Static Residential</b-form-checkbox>
                 </div>
+
                 <div class="col-lg-5 pr-0">
                   <b-form-checkbox
                     id="checkbox-3"
@@ -30,6 +32,7 @@
                     unchecked-value="not_accepted"
                   >Residential</b-form-checkbox>
                 </div>
+
                 <div class="col-lg-7">
                   <b-form-checkbox
                     id="checkbox-4"
@@ -41,18 +44,21 @@
               </div>
             </div>
           </div>
+
           <div class="col-lg-2">
             <div class="card-box bg-white">
               <h2 class="card-box-heading">Proxies</h2>
               <p class="card-box-desc">2</p>
             </div>
           </div>
+
           <div class="col-lg-2">
             <div class="card-box bg-white">
               <h2 class="card-box-heading">Transferred</h2>
               <p class="card-box-desc">103MB</p>
             </div>
           </div>
+
           <div class="col-lg-4">
             <div class="card-box bg-white">
               <h2 class="card-box-heading">Remaining Balance</h2>
@@ -86,100 +92,6 @@
   </div>
 </template>
 
-<style scoped>
-.content-card {
-  margin-top: -6rem;
-}
-.card-box {
-  padding: 1rem 0.8rem;
-}
-h2.card-box-heading {
-  font-size: 1.3rem;
-  color: var(--secondary);
-  margin-bottom: 0.1rem;
-}
-.filter-row [class^="col-lg"] {
-  padding-bottom: 1px;
-  padding-top: 1px;
-}
-p.card-box-desc {
-  font-size: 1.2rem;
-  color: var(--cyan);
-  font-weight: 500;
-  margin-bottom: 0;
-}
-.filter-row {
-  margin-top: -3rem;
-}
-.filter-row .card-box {
-  border-radius: 10px;
-}
-
-select.custom-select {
-  border: none;
-  border-bottom: 1px solid #ced4da;
-  border-radius: 0;
-}
-
-.secondary-heading {
-  flex: 1;
-  color: var(--blue);
-  font-weight: 500;
-  font-size: 1.4rem;
-}
-.text-muted-color {
-  color: #a9a9a9;
-  font-size: 1rem;
-}
-.text-muted {
-  font-size: 12px;
-}
-
-.form-control:focus {
-  border-color: transparent;
-  box-shadow: none;
-  border: 2px solid var(--blue);
-  border-left: none;
-}
-.form-control:focus + .input-group-prepend .input-group-text {
-  border: 2px solid var(--blue);
-  border-right: none;
-}
-
-.nav.nav-pills li.nav-item {
-  padding-bottom: 0;
-}
-.nav-pills .nav-link {
-  color: white;
-  font-weight: 500;
-  font-size: 1rem;
-}
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  color: var(--blue);
-  background-color: #fff;
-}
-.tab-content {
-  background: #fff;
-}
-@media (min-width: 768px) {
-  .custom-offset-md-1 {
-    margin-left: 13.333333%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .card-3 {
-    margin-top: 1rem;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .card {
-    margin-top: 1rem;
-  }
-}
-</style>
-
 <script>
 import TrafficChart from "./TrafficChart";
 
@@ -209,14 +121,8 @@ export default {
         { value: "300", text: "300" }
       ]
     };
-  },
-  methods: {
-    onSlideStart(slide) {
-      this.sliding = true;
-    },
-    onSlideEnd(slide) {
-      this.sliding = false;
-    }
   }
 };
 </script>
+
+<style src="../assets/user/DataTrafficComponent.css" scoped></style>

@@ -59,8 +59,8 @@
               <img :src="user_avatar" :alt="user_avatar_alt" class="img-fluid rounded-circle" />
             </div>
             <figcaption>
-              <span class="user-name">Ahmad Fraz</span>
-              <span class="user-email">ahmadmti@gmail.com</span>
+              <span class="user-name" v-text="user_name"></span>
+              <span class="user-email" v-text="user_email"></span>
             </figcaption>
           </figure>
         </div>
@@ -88,59 +88,13 @@ export default {
       user_avatar: "/images/resources/user/users-vector.jpg",
       user_avatar_alt: "User Avatar",
 
+      user_name: "Ahmad Fraz",
+      user_email: "ahmadmti@gmail.com",
       page_title: this.$route.meta.title ? this.$route.meta.title : "Dashboard"
     };
   }
 };
 </script>
 
-<style scoped>
-.dropdown-menu {
-  left: -9rem;
-}
-.navbar-brand {
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  color: #fff !important;
-  font-size: 2rem;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-li.nav-item {
-  padding: 0.52rem 0.5rem;
-}
+<style src="../assets/Header.css" scoped></style>
 
-.navbar-light .navbar-nav .nav-link {
-  color: #fff;
-  font-weight: 500;
-  padding: 0;
-}
-
-.page-heading {
-  font-size: 2rem;
-  font-weight: 500;
-  margin-bottom: 0;
-}
-.user-profile-avatar {
-  text-align: center;
-  padding: 2rem;
-}
-.user-profile-avatar .img-circle {
-  width: 75%;
-  border: 0.1rem dashed #fff;
-  border-radius: 50%;
-  padding: 1rem;
-}
-.user-profile-avatar figcaption {
-  color: #fff;
-}
-.user-profile-avatar figcaption .user-name {
-  display: block;
-  font-size: 1.3rem;
-}
-.user-profile-avatar figcaption .user-email {
-  display: block;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-</style>

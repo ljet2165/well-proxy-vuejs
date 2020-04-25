@@ -1,0 +1,46 @@
+.side-nav-bg {
+    background: url(/images/resources/admin/bg-sidenav.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+.sidenav {
+    height: 100%;
+    background: rgba(242, 242, 243, 0.8);
+}
+.icon-container {
+    padding: 1.6rem 0.5rem;
+    background: white;
+    margin: 4% 7%;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.icon-container:hover {
+    background: var(--blue);
+    color: #fff;
+    cursor: pointer;
+}
+.icon-container:hover a.menu {
+    color: #fff;
+}
+.icon-container.active {
+    background: var(--blue);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+.icon-container.active a.menu {
+    color: #fff;
+}
+.icon-container .menu .menu-icon {
+    font-size: 1.5rem;
+}
+.icon-container .menu .menu-title {
+    font-size: 0.8rem;
+}
+a.menu:hover {
+    text-decoration: none !important;
+}
+
+@media (min-width: 768px) {
+    .icon-container {
+        max-width: 35%;
+    }
+}

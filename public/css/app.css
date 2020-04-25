@@ -14066,6 +14066,23 @@ body {
   border-left: 0.3rem solid var(--secondary-color);
 }
 
+.v-dialog > .v-card > .v-card__subtitle,
+.v-dialog > .v-card > .v-card__text {
+  padding-bottom: 0;
+}
+
+.content-card {
+  margin-top: -6rem;
+}
+
+.table-body {
+  background-color: #fff;
+  box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 1rem 0;
+  min-height: 30rem;
+}
+
 .slider {
   width: 100%;
   margin: 100px auto;

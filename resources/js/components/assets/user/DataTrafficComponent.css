@@ -1,0 +1,33 @@
+.content-card {
+    margin-top: -6rem;
+}
+.card-box {
+    padding: 1rem 0.8rem;
+}
+h2.card-box-heading {
+    font-size: 1.3rem;
+    color: var(--secondary);
+    margin-bottom: 0.1rem;
+}
+.filter-row [class^="col-lg"] {
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+p.card-box-desc {
+    font-size: 1.2rem;
+    color: var(--cyan);
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.filter-row {
+    margin-top: -3rem;
+}
+.filter-row .card-box {
+    border-radius: 10px;
+}
+
+select.custom-select {
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+}

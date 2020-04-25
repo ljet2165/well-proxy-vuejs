@@ -1,0 +1,108 @@
+.content-card {
+    margin-top: -6rem;
+    min-height: 30rem;
+  }
+  .card-box {
+    padding: 1rem 0rem;
+    border-top-left-radius: 0;
+  }
+  h2.card-box-heading {
+    font-size: 1.3rem;
+    color: var(--secondary);
+    margin-bottom: 0.1rem;
+  }
+  p.card-box-desc {
+    font-size: 1.2rem;
+    color: var(--cyan);
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  
+  >>> .theme--light.v-application {
+    margin-top: -4rem;
+    background: transparent;
+  }
+  .content-card >>> .theme--light.v-tabs > .v-tabs-bar .v-tab {
+    margin: 0 4px;
+  }
+  .content-card >>> .theme--light.v-tabs > .v-tabs-bar .v-tab:first-child {
+    margin-left: 0;
+  }
+  >>> .v-window-item.v-window-item--active {
+    padding: 2rem 1rem;
+  }
+  >>> .theme--light.v-label {
+    margin-bottom: 0;
+  }
+  .content-card
+    >>> .theme--light.v-tabs
+    > .v-tabs-bar
+    .v-tab:not(.v-tab--active) {
+    background: #34629f;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .content-card >>> .v-tab--active {
+    color: inherit;
+    background: #fff;
+    color: var(--blue) !important;
+    font-weight: 600;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .content-card >>> .v-tab--active::after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    display: block;
+    width: 85%;
+    background: var(--blue);
+    border-right: 1px white;
+    bottom: 0;
+  }
+  >>> .theme--light.v-tabs > .v-tabs-bar {
+    background: transparent;
+  }
+  
+  >>> .tabs-section .tabs {
+    margin-top: -3.5rem;
+  }
+  >>> .custom-select,
+  >>> .form-control {
+    height: calc(2.6em + 0.75rem + 2px);
+  }
+  .filter-row {
+    margin-top: -2rem;
+  }
+  .filter-row .card-box {
+    border-radius: 10px;
+  }
+  
+  label {
+    font-size: 1.2rem;
+  }
+  
+  .form-control:focus {
+    border-color: transparent;
+    box-shadow: none;
+    border: 2px solid var(--blue);
+  }
+  
+  @media (min-width: 768px) {
+    .custom-offset-md-1 {
+      margin-left: 13.333333%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .card-3 {
+      margin-top: 1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .card {
+      margin-top: 1rem;
+    }
+  }

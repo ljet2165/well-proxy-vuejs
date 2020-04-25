@@ -1,0 +1,101 @@
+.content-card {
+    margin-top: -5rem;
+  }
+  /* heading row */
+  .row.header-row {
+    margin-top: -5rem;
+    color: #fff;
+    text-align: center;
+  }
+  .header-row h3 {
+    font-size: 1.2rem;
+  }
+  .row.table-heading {
+    background: #f5f5f5;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .table-heading h1 {
+    color: var(--blue);
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  .table-heading p.text-small {
+    font-size: 0.9rem;
+    color: var(--secondary);
+  }
+  .table-heading .table-heading-main img.user_avatar {
+    margin-top: -4.7rem;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .table-heading .table-heading-main {
+    padding: 2rem 2rem;
+  }
+  .table-heading .table-heading-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+  }
+  .table-heading p {
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+  /* heading row */
+  >>>.v-application.table-app .v-application--wrap {
+    min-height: 50vh;
+  }
+  >>> .table-app .v-card__title {
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  >>> .table-app .v-card__title {
+    border-bottom: 1px solid var(--blue);
+  }
+  >>> .table-app .v-card__actions {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-top: 1px solid var(--blue);
+  }
+  >>> .table-app .theme--light.v-data-table thead tr th {
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  /* table-data */
+  .row.table-row {
+    font-size: 1rem;
+    color: #6f6f6f;
+  }
+  .row.table-row:not(:last-child) {
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+  }
+  .row.table-row div:not(:first-child) {
+    text-align: center;
+  }
+  .row.table-row a.btn,
+  .row.table-row p.table-data {
+    display: inline-block;
+  }
+  
+  /* table-data */
+  
+  /* table footer */
+  .table-footer-row {
+    text-align: center;
+  }
+  /* table footer end */
+  
+  .text-bold {
+    font-weight: bold;
+  }
+  
+  .card-box {
+    padding: 1rem 0rem;
+  }

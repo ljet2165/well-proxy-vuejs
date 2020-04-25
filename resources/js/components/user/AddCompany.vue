@@ -43,11 +43,3 @@ export default {
   })
 };
 </script>
-
-
-<style scoped>
->>> .v-dialog > .v-card > .v-card__subtitle,
-.v-dialog > .v-card > .v-card__text {
-  padding-bottom: 0;
-}
-</style>
