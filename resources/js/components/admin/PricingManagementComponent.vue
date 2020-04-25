@@ -293,7 +293,7 @@ export default {
 }
 /* heading row */
 .row.header-row {
-  margin-top: -5rem;
+  margin-top: -4rem;
   color: #fff;
   text-align: center;
 }
